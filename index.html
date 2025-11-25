@@ -11,10 +11,94 @@
 
 <body>
 
+    <body class="bg-secondary">
+        <div class="container">
+            <div class="row justify-content-center align-items-center min-vh-100">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                    <div class="card shadow-lg bg-black text-white">
+                        <div class="card-body p-4">
+                            <h3 class="card-title text-end">JS Calculator</h3>
+                            <p class="card-title text-end text-secondary mb-4">By <a href="https://github.com/PasinduOG" class="link-secondary text-decoration-none" target="_blank">Pasindu OG</a></p>
 
+                            <!-- Display -->
+                            <div class="mb-3">
+                                <input type="text" id="display" class="form-control form-control-lg text-end bg-dark text-white border-dark"
+                                    value="0" readonly>
+                            </div>
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/app.js"></script>
-</body>
+                            <!-- Buttons -->
+                            <div class="row g-2">
+                                <div class="col-3">
+                                    <button class="btn btn-secondary w-100 py-3 text-black" onclick="clearDisplay()">C</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-secondary w-100 py-3 text-black" onclick="deleteLast()">←</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-secondary w-100 py-3 text-black"
+                                        onclick="setOperator('%')">%</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-warning w-100 py-3" onclick="setOperator('/')">÷</button>
+                                </div>
+
+                                <div class="col-3">
+                                    <button class="btn btn-dark w-100 py-3" onclick="setNumber('7')">7</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-dark w-100 py-3" onclick="setNumber('8')">8</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-dark w-100 py-3" onclick="setNumber('9')">9</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-warning w-100 py-3" onclick="setOperator('*')">×</button>
+                                </div>
+
+                                <div class="col-3">
+                                    <button class="btn btn-dark w-100 py-3" onclick="setNumber('4')">4</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-dark w-100 py-3" onclick="setNumber('5')">5</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-dark w-100 py-3" onclick="setNumber('6')">6</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-warning w-100 py-3" onclick="setOperator('-')">−</button>
+                                </div>
+
+                                <div class="col-3">
+                                    <button class="btn btn-dark w-100 py-3" onclick="setNumber('1')">1</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-dark w-100 py-3" onclick="setNumber('2')">2</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-dark w-100 py-3" onclick="setNumber('3')">3</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-warning w-100 py-3" onclick="setOperator('+')">+</button>
+                                </div>
+
+                                <div class="col-6">
+                                    <button class="btn btn-dark w-100 py-3" onclick="setNumber('0')">0</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-dark w-100 py-3" onclick="setNumber('.')">.</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-primary w-100 py-3" onclick="calculate()">=</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
 
 </html>
